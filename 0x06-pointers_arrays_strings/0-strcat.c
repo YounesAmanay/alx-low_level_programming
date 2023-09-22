@@ -10,17 +10,25 @@
  * Return: Pointer to memory area `s`
  */
 
-char *_memset(char *s, char b, unsigned int n)
+char *_strcat(char *dest, char *src)
 {
-	int i;
+	int k;
+	int n;
 
-	i = 0;
-	while (n > 0)
+	k  = 0;
+	while (dest[k] != '\0')
 	{
-		s[i] = b;
-		i++;
-		n--;
+		k++;
+	
 	}
-
-	return (s);
+	n=0;
+	
+	while (src[n] != '\0'
+	{
+		dest[k] = src[n];
+		k++;
+		n++;
+	}
+	dest[k] = '\0';
+	return (dest);
 }
